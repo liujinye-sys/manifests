@@ -1,0 +1,19 @@
+name: cla-check
+
+on:
+  pull_request:
+    types: [opened, reopened, synchronize]
+  issue_comment:
+    types: [created]
+
+# Set permissions for the workflow
+permissions:
+  contents: read
+  pull-requests: write
+  statuses: write
+  issues: write
+
+jobs:
+  cla-check:
+    uses: liujinye-sys/public-actions/.github/workflows/cla.yml@dev
+    secrets: inherit
