@@ -4,6 +4,8 @@
   <remote fetch="../" name="git" />
   <default remote="openvela" revision="trunk" />
 
+  <project path=".claude" name=".claude" />
+
   <project path="apps" name="nuttx-apps" />
   <project path="apps/benchmarks/coremark/coremark" name="apps_benchmarks_coremark" />
   <project path="apps/benchmarks/test-tlb/test-tlb" name="apps_benchmarks_test-tlb" />
@@ -44,8 +46,9 @@
   <project path="apps/testing/fff/fff" name="apps_testing_fff" />
   <project path="apps/testing/libc-test/libc-test" name="apps_testing_libc-test" />
   <project path="apps/testing/ltp/ltp" name="apps_testing_ltp" />
-  <project path="apps/testing/stressapptest/stressapptest" name="apps_testing_stressapptest" />
+  <project path="apps/testing/mm/stressapptest/stressapptest" name="apps_testing_mm_stressapptest" />
   <project path="apps/testing/unity/Unity" name="apps_testing_unity_Unity" />
+  <project path="build" name="build" />
   <project path="docs" name="docs" />
   <project path="external" name="external" />
   <project path="external/aac/aac" name="external_aac" />
@@ -68,6 +71,7 @@
   <project path="external/android/system/tools/hidl" name="external_android_system_tools_hidl" />
   <project path="external/atomic_queue/atomic_queue" name="external_atomic_queue" />
   <project path="external/auto-pts/auto-pts" name="external_auto-pts" />
+  <project path="external/bailian_sdk" name="external_bailian_sdk" />
   <project path="external/avb/avb" name="external_avb" />
   <project path="external/bzip2/bzip2" name="external_bzip2" />
   <project path="external/c-ares/c-ares" name="external_c-ares" />
@@ -93,7 +97,7 @@
   <project path="external/iperf2/iperf2" name="external_iperf2" />
   <project path="external/iperf3/iperf3" name="external_iperf3" />
   <project path="external/json-c/json-c" name="external_json-c" />
-  <project path="external/lc3/lc3" name="external_lc3" />
+  <project path="external/liblc3/liblc3" name="external_liblc3" />
   <project path="external/ldns/ldns" name="external_ldns" />
   <project path="external/libchrome/modp_b64" name="external_libchrome_modp_b64" />
   <project path="external/libdivide/libdivide" name="external_libdivide" />
@@ -200,10 +204,11 @@
   <project path="nuttx/openamp/libmetal" name="nuttx_openamp_libmetal" />
   <project path="nuttx/openamp/open-amp" name="nuttx_openamp_open-amp" />
   <project path="packages" name="packages" />
+  <project path="packages/ai_agent" name="packages_ai_agent" />
   <project path="packages/apps" name="packages_apps" />
   <project path="packages/demos" name="packages_demos" />
   <project path="packages/fe/examples" name="packages_fe_examples"/>
-  <project path="prebuilts/clang/linux/wasm" name="prebuilts_clang_linux_wasm" clone-depth="1" />
+  <project path="prebuilts/clang-wasm/linux-x86_64" name="prebuilts_clang_linux_wasm" clone-depth="1" />
   <project path="tests" name="tests" />
   <project path="vendor" name="vendor" />
   <project path="vendor/allwinnertech" name="vendor_allwinnertech" />
